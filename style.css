@@ -30,8 +30,14 @@ main{
 .quote-wrapper h1{
     font-size: 2.5rem;
 }
+.quote-wrapper h1 span.err{
+    color: rgb(209, 18, 18);
+}
 .quote-wrapper h1.long-quote{
     font-size: 2.2rem;
+}
+.quote-wrapper h1.longer-quote{
+    font-size: 2rem;
 }
 .quote-wrapper h1 i{
     font-size: 3rem;
@@ -75,12 +81,38 @@ main{
     color: #38a1f3;
 }
 
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
 @media screen and (max-width: 768px){
     .quote-wrapper h1{
         font-size: 2.2rem;
     }
     .quote-wrapper h1.long-quote{
         font-size: 2rem;
+    }
+    .quote-wrapper h1.longer-quote{
+        font-size: 1.8rem;
     }
 }
 @media screen and (max-width: 500px){
@@ -89,5 +121,8 @@ main{
     }
     .quote-wrapper h1.long-quote{
         font-size: 1.6rem;
+    }
+    .quote-wrapper h1.longer-quote{
+        font-size: 1.4rem;
     }
 }
